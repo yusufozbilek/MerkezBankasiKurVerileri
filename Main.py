@@ -6,7 +6,7 @@ import os
 
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
-driver = webdriver.Chrome(executable_path=r'C:\Program Files\Google\Chrome\Application\chromedriver.exe',options=op)
+driver = webdriver.Chrome(options=op)
 
 url = "https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+page+site+area/bugun"
 
