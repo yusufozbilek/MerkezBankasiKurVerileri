@@ -4,5 +4,15 @@ import os
 from CurrencyClass import TcmbCurrencyData
 
 CurrencyObj = TcmbCurrencyData()
-for value in range(0,CurrencyObj.GetCrossRateLenght()):
-    print(CurrencyObj.GetAllCrossRates()[value])
+
+print(CurrencyObj.GetCurrency("USD/TRY"))
+print("#################################")
+print(CurrencyObj.GetCrossRate("USD/RUB"))
+print("#################################")
+print(CurrencyObj.GetAllCurrency())
+print("#################################")
+print(CurrencyObj.GetAllCrossRates())
+print("#################################")
+print(CurrencyObj.GetCurrencyLenght())
+print("#################################")
+print(CurrencyObj.GetCrossRateLenght())
