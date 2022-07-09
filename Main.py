@@ -4,5 +4,5 @@ import os
 from CurrencyClass import TcmbCurrencyData
 
 CurrencyObj = TcmbCurrencyData()
-for value in range(0,len(CurrencyObj.GetAllCurrency(""))):
-    print(CurrencyObj.GetAllCurrency("")[value])
+for value in range(0,CurrencyObj.GetCrossRateLenght()):
+    print(CurrencyObj.GetAllCrossRates()[value])
